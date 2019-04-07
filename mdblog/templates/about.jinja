@@ -1,32 +1,7 @@
-<!doctype html>
-<html lang="en">
+{% extends "_main.jinja" %}
 
-<head>
-    <title> Welcome to Markdown blog </title>
-    <link rel="stylesheet" type="text/css" href={{url_for("static", filename="css/main.css")}}>
-</head>
+{% block title %} Welcome to Markdown blog {% endblock %}
 
-<body>
-<header>
-    <h1> Jan Vícha </h1>
-</header>
-
-<nav>
-    <ul class=nav>
-      <li> <a href="#">About</a> </li>
-      <li> <a href="#">Articles</a> </li>
-      <li> <a href="#">Admin</a> </li>
-    </ul>
-</nav>
-
-<main>
-    Hi, I'm Jan.
-</main>
-
-<footer>
-    <p>
-        (c) 2019 Jan Vícha
-    </p>
-</footer>
-</body>
-</html>
+{% block main %}
+Hi, I'am Jan
+{% endblock %}

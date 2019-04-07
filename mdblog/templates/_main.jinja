@@ -8,19 +8,19 @@
 
 <body>
 <header>
-    <h1> Jan Vícha </h1>
+    <h1> <a href="{{ url_for("view_welcome_page") }}">Jan Vícha</a></h1>
 </header>
 
 <nav>
     <ul class=nav>
-      <li> <a href="#">About</a> </li>
-      <li> <a href="#">Articles</a> </li>
-      <li> <a href="#">Admin</a> </li>
+      <li> <a href="{{ url_for("view_about") }}">About</a> </li>
+      <li> <a href="{{ url_for("view_articles") }}">Articles</a> </li>
+      <li> <a href="{{ url_for("view_admin") }}">Admin</a> </li>
     </ul>
 </nav>
 
 <main>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    {% block main %} {% endblock %}
 </main>
 
 <footer>
