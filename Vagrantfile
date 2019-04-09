@@ -20,7 +20,7 @@ Vagrant.configure("2") do |config|
   end
 
   # public network => Bridged
-  config.vm.network "public_network" , bridge: "en0: Wi‑Fi (AirPort)"
+  config.vm.network "public_network" , bridge: "en0: Wi-Fi (AirPort)"
 
   # install & configure software
   config.vm.provision :shell, :path => "bootstrap.sh"
