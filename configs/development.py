@@ -1,0 +1,1 @@
+DATABASE = "/vagrant/blog.db"

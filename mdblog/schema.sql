@@ -1,6 +1,6 @@
 drop table if exists articles;
-create table arcticles (
+create table articles (
   id INTEGER PRIMARY KEY autoincrement,
-  tittle text NOT NULL,
+  title text NOT NULL,
   content text NOT NULL
 );
