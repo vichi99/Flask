@@ -16,11 +16,12 @@ Vagrant.configure("2") do |config|
 
   config.vm.provider "virtualbox" do |v|
     v.memory = 2048
-    v.cpus = 4
+    v.cpus = 2
   end
 
   # public network => Bridged
   config.vm.network "public_network" , bridge: "en0: Wi-Fi (AirPort)"
+  #config.vm.network "forwarded_port" , guest: 80, host: 8080
 
   # install & configure software
   config.vm.provision :shell, :path => "bootstrap.sh"
